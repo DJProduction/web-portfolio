@@ -1,0 +1,131 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Remove automatic margins created when using header tags */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
+
+  ul {
+    /* Remove automatically generated bullets */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header {
+    /* Add box shadow to the header to show a clear seperation between the
+    top logo and title and the main image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    margin-bottom: 20px;
+  }
+
+  /* Ensures header_title and header_short_description are aligned
+  in a stacked formation */
+.header_inner_right {
+    display: inline-block;
+}
+
+/* Style for the tri_logo */
+.header_logo {
+    padding-top: 10px;
+    margin-right: 10px;
+    height: 125px;
+}
+
+/* Styling for developer's mame in the header */
+.header_title {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+
+/* Styling for the Front End Web Developer text */
+.header_short_description {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+}
+
+/* Main image styling */
+.main_image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Web project list styling */
+.projects_header {
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    font-size: 2em;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+    box-shadow: 0px 8px 9px -1px rgba(163,163,163,1);
+    text-align: center
+}
+
+/* Styling for the div tag containing the project list */
+.projects_library {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for each project item, each item should use maximum width
+for device screen while providing some space in between projects
+in the list.
+vertical-align is added becuase the project_titles and project_urls
+could an item out of line with th remaining projects.
+*/
+.project_iten {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 60%;
+    vertical-align: top;
+}
+
+.project_title {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: rgb(100, 100, 100);
+}
+
+/* Styling for project url below the title.
+Displays the web address for each project */
+.project_url {
+    font-family: Verdana, Geneva, sans-serif;
+    font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 20px;
+    font-size: 1em;
+}
+
+.project_image {
+    width: 100%;
+}
+
+/* Footer styling */
+
+
