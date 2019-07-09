@@ -31,10 +31,10 @@ body {
   }
 
   .header {
-    /* Add box shadow to the header to show a clear seperation between the
+    /* Add bottom border shadow to the header to show a clear seperation between the
     top logo and title and the main image */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-    margin-bottom: 20px;
+    box-shadow: 0px 8px 9px -1px rgba(163,163,163,1);
+    padding-bottom: 1%;
   }
 
   /* Ensures header_title and header_short_description are aligned
@@ -46,8 +46,8 @@ body {
 /* Style for the tri_logo */
 .header_logo {
     padding-top: 10px;
-    margin-right: 10px;
-    height: 125px;
+    width: 30%;
+    height: auto;
 }
 
 /* Styling for developer's mame in the header */

@@ -8,6 +8,7 @@ depending on the device width */
   .header {
     display: block;
     width: 100%;
+    text-align: center;
   }
 
   /* The main image should be display from edge-to-edge */
@@ -23,21 +24,28 @@ and the header_short_description.
 The text and logo should also appear centered */
 @media screen and (max-width: 413px) {
    .header {
-    text-align: center;
-    padding-bottom: 10px;
-   }
-
-   .header_logo {
-     margin-right: 20px;
+    padding-bottom: 3%;
    }
 }
 
 /*  The device width provides enough space for the header_logo
 to be placed beside the header_title and head_short_description.
 So the logo and text should be aligned to the left.  */
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 414px) {
   .header {
-   text-align: left;
+    padding-bottom: 3%;
+   }
+}
+
+/* To ensure the logo remains above the title information on medium-sized
+devices */
+@media screen and (min-width: 484px) {
+  .header_title {
+    font-size: 2em;
+  }
+
+  .header_short_description{
+    font-size: 1em;
   }
 }
 
@@ -84,6 +92,35 @@ without wrapping to the next line */
   .project_iten {
     width: 30%;
   }
+
+  .header{
+    padding-bottom: 1%;
+    margin-bottom: 4%;
+  }
+
+  .header_inner_text{
+    padding-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .header_logo{
+    width: 22%;
+    padding-top: 1%;
+  }
+
+  .header_inner_right{
+    width: 70%;
+  }
+
+  .header_title {
+    font-size: 2.5em;
+  }
+
+  .header_short_description{
+    font-size: 1.8em;
+  }
 }
 
 /* Larger screen sizes */
@@ -95,7 +132,7 @@ Anything beyound those pixels will just create more margin space
 but the items such as the images will not become distorted. */
 @media screen and (min-width: 800px) {
 main,
-.header,
+.header_inner_text,
 content {
     width: 800px;
     margin-left: auto;
