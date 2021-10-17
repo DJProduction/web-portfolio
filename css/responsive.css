@@ -14,6 +14,7 @@ depending on the device width */
 /* The main image should be display from edge-to-edge */
 .main_image_section {
   display: block;
+  position: relative;
   width: 100%;
 }
 
