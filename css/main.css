@@ -38,22 +38,40 @@ ul {
 /*---------------- Header Section -----------------*/
 
 .header {
-  /* Add bottom border shadow to the header to show a clear seperation between the
-    top logo and title and the main image */
+  /* Add bottom border shadow to the header to show a clear seperation between the top logo and title and the main image */
+  width: 100%;
   box-shadow: 0px 8px 9px -1px rgba(163, 163, 163, 1);
   padding-bottom: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 2% 0;
+}
+
+.header_inner_text {
+  margin: auto 0 auto 0;
+  text-align: center;
 }
 
 /* Ensures header_title and header_short_description are aligned
   in a stacked formation */
 .header_inner_right {
-  display: inline-block;
+  /* display: inline-block;
+    display: flex;
+  flex-wrap: wrap; */
+}
+
+.header_logo_section {
+  width: 14%;
+  height: auto;
+  padding: 5px 0 0 0;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style for the tri_logo */
 .header_logo {
-  padding-top: 10px;
-  width: 30%;
+  width: 100%;
   height: auto;
 }
 

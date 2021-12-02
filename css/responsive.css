@@ -5,12 +5,6 @@ depending on the device width */
   flex-wrap: wrap;
 }
 
-.header {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-
 /* The main image should be display from edge-to-edge */
 .main_image_section {
   display: block;
@@ -25,28 +19,45 @@ and the header_short_description.
 The text and logo should also appear centered */
 @media screen and (max-width: 413px) {
   .header {
-    padding-bottom: 3%;
+    padding-bottom: 2%;
+  }
+
+  .header_logo_section {
+    width: 60px;
+  }
+
+  .header_logo {
+    align-content: center;
+    margin: 0 0 0 0;
   }
 }
 
 /*  The device width provides enough space for the header_logo
 to be placed beside the header_title and head_short_description.
 So the logo and text should be aligned to the left.  */
-@media screen and (min-width: 414px) {
-  .header {
-    padding-bottom: 3%;
+@media screen and (max-width: 414px) {
+  .nav {
+    font-size: 0.9em;
   }
 }
 
 /* To ensure the logo remains above the title information on medium-sized
 devices */
-@media screen and (min-width: 484px) {
+@media screen and (min-width: 414px) {
   .header_title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .header_short_description {
     font-size: 1em;
+  }
+
+  .header_logo_section {
+    width: 70px;
+  }
+
+  .nav {
+    font-size: 0.9em;
   }
 }
 
@@ -55,11 +66,15 @@ and header_short_description in a large size
 without wrapping to the next line */
 @media screen and (min-width: 548px) {
   .header_title {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .header_short_description {
-    font-size: 1.5em;
+    font-size: 1.2em;
+  }
+
+  .header_logo_section {
+    width: 75px;
   }
 }
 
@@ -67,13 +82,6 @@ without wrapping to the next line */
 and header_short_description in a large size
 without wrapping to the next line */
 @media screen and (min-width: 680px) {
-  .header_title {
-    font-size: 3em;
-  }
-
-  .header_short_description {
-    font-size: 2em;
-  }
 }
 
 /* Projects responsive changes */
@@ -96,31 +104,18 @@ without wrapping to the next line */
 
   .header {
     padding-bottom: 1%;
-    margin-bottom: 2%;
-  }
-
-  .header_inner_text {
-    padding-left: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-  }
-
-  .header_logo {
-    width: 22%;
-    padding-top: 1%;
-  }
-
-  .header_inner_right {
-    width: 70%;
   }
 
   .header_title {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
   .header_short_description {
-    font-size: 1.8em;
+    font-size: 1.5em;
+  }
+
+  .header_logo_section {
+    width: 90px;
   }
 }
 
@@ -133,7 +128,7 @@ Anything beyound those pixels will just create more margin space
 but the items such as the images will not become distorted. */
 @media screen and (min-width: 800px) {
   main,
-  .header_inner_text,
+  .header,
   content {
     width: 800px;
     margin-left: auto;
