@@ -128,7 +128,6 @@ Anything beyound those pixels will just create more margin space
 but the items such as the images will not become distorted. */
 @media screen and (min-width: 800px) {
   main,
-  .header,
   content {
     width: 800px;
     margin-left: auto;
