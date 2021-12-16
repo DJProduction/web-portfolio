@@ -46,6 +46,17 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 0 0.8em 0;
+  background: #ef32d9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .header_inner_text {
@@ -121,6 +132,17 @@ ul {
   height: 100%;
 }
 
+/* About me text */
+.about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: small;
+  text-align: center;
+  font-style: italic;
+}
+
 /* --------------Project Section  ------------------*/
 
 /* Web project list styling */
@@ -180,3 +202,60 @@ Displays the web address for each project */
 }
 
 /* Footer styling */
+
+footer {
+  padding: 5px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background: #ef32d9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89fffd,
+    #ef32d9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer {
+  padding: 0 0 15px 0;
+}
+
+.contact_list {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact_title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 0 10px 0;
+}
+
+.contact_list_item {
+  display: inline-block;
+  width: 8%;
+  margin: 0 7px;
+}
+
+.contact_img {
+  width: 100%;
+  height: auto;
+}
+
+/* .contact_list_item {
+  width: 5%;
+  margin: 5px 10px 10px;
+}
+
+.contact_img {
+  width: 100%;
+  height: auto;
+} */
