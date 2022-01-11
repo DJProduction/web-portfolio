@@ -102,14 +102,14 @@ without wrapping to the next line */
   }
 }
 
-/* The device screen can should the header_title
-and header_short_description in a large size
-without wrapping to the next line */
+/* Adjust the modal img and other images */
 @media screen and (min-width: 680px) {
+  .modal_image {
+    width: 35%;
+  }
 }
 
 /* Projects responsive changes */
-/* Display projects in a two-column format */
 @media screen and (min-width: 520px) {
   .project_iten {
     width: 45%;
@@ -117,6 +117,20 @@ without wrapping to the next line */
 
   .projects_header {
     font-size: 2.5em;
+  }
+
+  a.project_link:link {
+    width: 45%;
+  }
+
+  .project_descrip {
+    width: 50%;
+  }
+
+  /* Switch the order of link/descrip in the alternative project rows */
+
+  .alt {
+    order: 2;
   }
 
   .about {
@@ -127,12 +141,20 @@ without wrapping to the next line */
     margin: auto;
   }
 
+  .modal-about {
+    font-size: 1em;
+  }
+
   .contact_title {
     font-size: 1.2em;
   }
+
+  .contact_list_item {
+    width: 50px;
+  }
 }
 
-/* Display projects in a three-column format */
+/* Large computer screens */
 @media screen and (min-width: 750px) {
   .project_iten {
     width: 30%;
@@ -154,6 +176,14 @@ without wrapping to the next line */
     width: 90px;
   }
 
+  .modal_image {
+    width: 30%;
+  }
+
+  .modal-about {
+    font-size: 1.2em;
+  }
+
   .contact_title {
     font-size: 1.3em;
   }
@@ -167,8 +197,7 @@ Use the major containers to set a max-size of 800.
 Anything beyound those pixels will just create more margin space
 but the items such as the images will not become distorted. */
 @media screen and (min-width: 800px) {
-  main,
-  content {
+  main {
     width: 800px;
     margin-left: auto;
     margin-right: auto;

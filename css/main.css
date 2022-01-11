@@ -131,22 +131,64 @@ ul {
   border-radius: 50%;
 }
 
-/* The overlay effect - lays on top of the container and over the image */
-/* .overlay {
-  position: absolute;
-  top: 0;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-} */
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal_image {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.modal-about {
+  padding: 10px 0 0 0;
+  font-size: 0.9em;
+  text-align: left;
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* About me text */
 .about {
   width: 70%;
   font-size: 0.8em;
-  text-align: center;
   font-style: italic;
   text-align: left;
 }
@@ -161,7 +203,7 @@ ul {
   font-size: 2em;
   font-weight: 500;
   color: rgb(100, 100, 100);
-  box-shadow: 0px 8px 9px -1px rgba(163, 163, 163, 1);
+  box-shadow: 0px 4px 9px 4px rgba(163, 163, 163, 1);
   text-align: center;
 }
 
@@ -172,26 +214,61 @@ ul {
   text-align: center;
 }
 
+/* Project themes highlight seperate projects and their descriptions */
+.project_row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  margin: 20px 0 20px 0;
+  justify-content: center;
+  box-shadow: 0px 4px 9px 4px rgba(163, 163, 163, 1);
+}
+
+.row_theme_1 {
+  background-color: #c7faf7;
+}
+
+.row_theme_2 {
+  background-color: #ebb8e4;
+}
+
 /* Styling for each project item, each item should use maximum width
 for device screen while providing some space in between projects
 in the list.
 vertical-align is added becuase the project_titles and project_urls
 could an item out of line with th remaining projects.
 */
-.project_iten {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
-  width: 60%;
-  vertical-align: top;
+.project_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0 20px 0;
+  width: 100%;
 }
 
 .project_title {
   font-size: 1.3em;
-  font-weight: 300;
-  color: rgb(100, 100, 100);
+  font-weight: 700;
+  color: black;
+}
+
+a.project_link:link {
+  width: 50%;
+  margin: auto 0;
+  text-decoration: none;
+}
+
+a.project_link:visited {
+  text-decoration: none;
+}
+
+a.project_link:hover {
+  text-decoration: underline;
+}
+
+/* selected link */
+a.project_link:hover {
+  text-decoration: underline;
 }
 
 /* Styling for project url below the title.
@@ -206,7 +283,14 @@ Displays the web address for each project */
 }
 
 .project_image {
-  width: 100%;
+  width: 70%;
+}
+
+.project_descrip {
+  width: 60%;
+  margin: auto 0;
+  padding: 0 20px;
+  text-align: left;
 }
 
 /* Footer styling */
@@ -249,7 +333,7 @@ footer {
 
 .contact_list_item {
   display: inline-block;
-  width: 8%;
+  width: 40px;
   margin: 0 7px;
 }
 

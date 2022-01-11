@@ -60,23 +60,21 @@
             understanding algorithms, computer architecture, and creating
             applications using C++, Javascript, and Java. I then started
             studying in the Front-End Web Developer Nanodegree program through
-            Udacity. The experience gained from this program provided the
-            confidence I needed to resolve issues by improving critical thinking
-            skills. Since I was always interested in design I quickly became
-            enthusiastic in creating visually appealing designs in my projects
-            while still ensuring the functions were structurally sound. My
-            involvement large-scale NYC systems such as Automated City Register
-            Information System (ACRIS) and Property Tax System (PTS) has given
-            me an appreciation for working with diverse teams to enhance the
-            lives of others. Currently, I am applying the same passion to
-            learning more about software engineering and creating web
-            applications independently to benefit others. I would appreciate any
-            contact from others looking for entry-level Front-End developers. I
-            would like explore various ways of expressing my creativity through
-            code with similar-minded individuals.
+            Udacity.
+            <button id="show-more">Show More</button>
+            <div class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                          <img
+            class="modal_image"
+            srcset="img/aboutMe.jpg"
+            alt="about me image"
+          />
+          <p class="modal-about">Hi, My name is Dequan Johnson and I am a Front-End Developer with experience as a Quality Assurance Specialist with the Department of Finance. A background in Computer Science has given me experience in understanding algorithms, computer architecture, and creating applications using C++, Javascript, and Java. I then started studying in the Front-End Web Developer Nanodegree program through Udacity. The experience gained from this program provided the confidence I needed to resolve issues by improving critical thinking skills. Since I was always interested in design I quickly became enthusiastic in creating visually appealing designs in my projects while still ensuring the functions were structurally sound. My involvement large-scale NYC systems such as Automated City Register Information System (ACRIS) and Property Tax System (PTS) has given me an appreciation for working with diverse teams to enhance the lives of others. Currently, I am applying the same passion to learning more about software engineering and creating web applications independently to benefit others. I would appreciate any contact from others looking for entry-level Front-End developers. I would like explore various ways of expressing my creativity through code with similar-minded individuals.</p>
+              </div>
+            </div>
           </p>
         </div>
-
         <!-- General title of the list of projects -->
         <div class="projects_header">
           <h3 class="projects_header_description">Projects</h3>
@@ -86,46 +84,70 @@
         <!-- Will be used to access mutiple sites created -->
         <div class="projects_library">
           <ul class="projects_list">
-            <li class="project_iten">
-              <a href="https://github.com/DJProduction/Summer-Card-Match-Game">
-                <img
-                  class="project_image"
-                  srcset="img/brain.jpg"
-                  alt="picture of brain "
-                />
-                <h3 class="project_title">Memory Game</h3>
-              </a>
-            </li>
-            <li class="project_iten">
-              <a href="https://github.com/DJProduction/arcade-game-crossy-road">
-                <img
-                  class="project_image"
-                  srcset="img/neon-arcade-machine-3D.jpg"
-                  alt="picture of arcade machine"
-                />
-                <h3 class="project_title">Classic Arcade Game Clone</h3>
-              </a>
-            </li>
-            <li class="project_iten">
-              <a href="https://github.com/DJProduction/feed-reader">
-                <img
-                  class="project_image"
-                  srcset="img/rss_gray.png"
-                  alt="picture of rss feed logo"
-                />
-                <h3 class="project_title">Feed Reader Testing</h3>
-              </a>
-            </li>
-            <li class="project_iten">
-              <a href="https://github.com/DJProduction/Restaurant-Reviews">
-                <img
-                  class="project_image"
-                  srcset="img/eat_here_restaurant.jpg"
-                  alt="picture of restaurant"
-                />
-                <h3 class="project_title">Restaurant Reviews</h3>
-              </a>
-            </li>
+            <div class="project_row row_theme_1">
+              <li class="project_item">
+                <a class="project_link" href="https://github.com/DJProduction/Summer-Card-Match-Game">
+                  <img
+                    class="project_image"
+                    srcset="img/brain.jpg"
+                    alt="picture of brain "
+                  />
+                  <h3 class="project_title">Memory Game</h3>
+                </a>
+                <p class="project_descrip">
+                  Simple card matching game. Match all the icons before the board completely changes.
+                </p>
+              </li>
+            </div>
+
+            <div class="project_row">
+              <li class="project_item">
+                <a class="project_link alt" href="https://github.com/DJProduction/arcade-game-crossy-road">
+                  <img
+                    class="project_image"
+                    srcset="img/neon-arcade-machine-3D.jpg"
+                    alt="picture of arcade machine"
+                  />
+                  <h3 class="project_title">Classic Arcade Game Clone</h3>
+                </a>
+                <p class="project_descrip">
+                  Game in which user attempts to cross the road to reach the water while collecting as many rewards as they can. User must also avoid moving enemies. Users can also change their characters by stepping on the star and choosing from the menu. Rewards are randomly generated and enemies will move at different speeds every pass-through. Be careful and have fun.
+                </p>
+              </li>
+            </div>
+
+            <div class="project_row row_theme_2">
+              <li class="project_item">
+                <a class="project_link" href="https://github.com/DJProduction/feed-reader">
+                  <img
+                    class="project_image"
+                    srcset="img/rss_gray.png"
+                    alt="picture of rss feed logo"
+                  />
+                  <h3 class="project_title">Feed Reader Testing</h3>
+                </a>
+                <p class="project_descrip">
+                  This site shows how new features are tested before implementation. The importance is to avoid interrupting the stability of the main site for users while still improving on features.
+                </p>
+              </li>
+            </div>
+
+            <div class="project_row">
+              <li class="project_item">
+                <a class="project_link alt" href="https://github.com/DJProduction/Restaurant-Reviews">
+                  <img
+                    class="project_image"
+                    srcset="img/eat_here_restaurant.jpg"
+                    alt="picture of restaurant"
+                  />
+                  <h3 class="project_title">Restaurant Reviews</h3>
+                </a>
+                <p class="project_descrip">
+                  Converted a static webpage into a responsive web application with additional robust features. The goal is to improve the user experience to be comparable to a native application with basic features.
+                </p>
+              </li>
+            </div>
+
           </ul>
         </div>
       </section>
@@ -143,5 +165,7 @@
         </li>
       </ul>
     </footer>
+
+        <script type="text/javascript" src="js/modal.js"></script>
   </body>
 </html>
