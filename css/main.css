@@ -131,6 +131,26 @@ ul {
   border-radius: 50%;
 }
 
+button#show-more {
+  background: linear-gradient(to right, #89fffd, #ef32d9);
+  border-radius: 12px;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+}
+button#show-more:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -225,11 +245,11 @@ ul {
 }
 
 .row_theme_1 {
-  background-color: #c7faf7;
+  background-color: #9df3ed;
 }
 
 .row_theme_2 {
-  background-color: #ebb8e4;
+  background-color: #f595ea;
 }
 
 /* Styling for each project item, each item should use maximum width
