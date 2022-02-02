@@ -76,6 +76,7 @@ ul {
   width: 14%;
   height: auto;
   padding: 5px 0 0 0;
+  margin: 0 15px 0 0;
   justify-content: center;
   align-items: center;
 }
@@ -100,20 +101,6 @@ ul {
   font-size: 1em;
 }
 
-/*--------------- Navigation Section ------------------*/
-.nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1% 0 0;
-}
-
-.nav ul li {
-  margin: 0 2% 0;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 /*--------------- ABout Section ------------------*/
 
 /* Main image styling */
@@ -132,7 +119,7 @@ ul {
 }
 
 button#show-more {
-  background: linear-gradient(to right, #89fffd, #ef32d9);
+  background: linear-gradient(to right, #94f3f1, #f58ee9);
   border-radius: 12px;
   border: none;
   color: black;
